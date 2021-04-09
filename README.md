@@ -44,24 +44,24 @@ Gotool的存在就是为了减少代码搜索成本，避免网络上参差不�
 
 | 模块                |     介绍                                                                          |
 | -------------------|---------------------------------------------------------------------------------- |
-| gotool-aop         |     JDK动态代理封装，提供非IOC下的切面支持                                              |
-| gotool-bloomFilter |     布隆过滤，提供一些Hash算法的布隆过滤                                                |
-| gotool-cache       |     简单缓存实现                                                                     |
-| gotool-core        |     核心，包括Bean操作、日期、各种Util等                                               |
-| gotool-cron        |     定时任务模块，提供类Crontab表达式的定时任务                                          |
-| gotool-crypto      |     加密解密模块，提供对称、非对称和摘要算法封装                                          |
-| gotool-db          |     JDBC封装后的数据操作，基于ActiveRecord思想                                         |
-| gotool-dfa         |     基于DFA模型的多关键字查找                                                         |
-| gotool-extra       |     扩展模块，对第三方封装（模板引擎、邮件、Servlet、二维码、Emoji、FTP、分词等）            |
-| gotool-http        |     基于HttpUrlConnection的Http客户端封装                                            |
-| gotool-log         |     自动识别日志实现的日志门面                                                         |
-| gotool-script      |     脚本执行封装，例如Goscript                                                     |
-| gotool-setting     |     功能更强大的Setting配置文件和Properties封装                                        |
-| gotool-system      |     系统参数调用封装（JVM信息等）                                                      |
-| gotool-json        |     JSON实现                                                                       |
-| gotool-captcha     |     图片验证码实现                                                                   |
-| gotool-poi         |     针对POI中Excel和Word的封装                                                       |
-| gotool-socket      |     基于Go的NIO和AIO的Socket封装                                                   |
+| aop         |     Go动态代理封装，提供非IOC下的切面支持                                              |
+| bloomFilter |     布隆过滤，提供一些Hash算法的布隆过滤                                                |
+| cache       |     简单缓存实现                                                                     |
+| core        |     核心，包括Bean操作、日期、各种Util等                                               |
+| cron        |     定时任务模块，提供类Crontab表达式的定时任务                                          |
+| encrypt     |     加密解密模块，提供对称、非对称和摘要算法封装                                          |
+| db         |     Go Database Connectivity封装后的数据操作
+| dfa         |     基于DFA模型的多关键字查找                                                         |
+| expand       |     扩展模块，对第三方封装（模板引擎、邮件、Servlet、二维码、Emoji、FTP、分词等）            |
+| http        |     Http客户端封装                                            |
+| logger         |     自动识别日志实现的日志门面                                                         |
+| script      |     脚本执行封装                                                    |
+| conf    |     功能更强大的Setting配置文件和Properties封装                                        |
+| system      |     系统参数调用封装                                                     |
+| json        |     JSON操作实现                                                                       |
+| captcha     |     图片验证码实现                                                                   |
+| poi         |     针对POI中Excel和Word的封装                                                       |
+| socket      |     基于Go的NIO和AIO的Socket封装                                                   |
 
 可以根据需求对每个模块单独引入，也可以通过引入`go get gotool`方式引入所有模块。
 
