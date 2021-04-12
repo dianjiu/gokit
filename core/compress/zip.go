@@ -11,11 +11,11 @@ import (
 )
 
 // Zip Compressed file.
-// dst is the file directory to be compressed.
-// src is the file directory after successful compression.
-func Zip(dst, src string) (err error) {
+// src is the abbreviation of source, which is a directory of files to be compressed.
+// dst is the abbreviation of destination, which is the compressed file directory.
+func Zip(src, dest string) (err error) {
 	// Create a file to be written.
-	fw, err := os.Create(dst)
+	fw, err := os.Create(dest)
 	defer fw.Close()
 	if err != nil {
 		return err
@@ -82,6 +82,8 @@ func Zip(dst, src string) (err error) {
 }
 
 // UnZip decompressed file.
+// src is the abbreviation of source, which is a directory of files to be decompressed.
+// dst is the abbreviation of destination,  which is the decompressed file directory.
 func UnZip(dst, src string) (err error) {
 	// Open compressed file.
 	zr, err := zip.OpenReader(src)
