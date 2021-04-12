@@ -30,6 +30,79 @@ func Zip(src, dest string) (err error) {
 		}
 	}()
 
+	// 打开文件夹
+	dir, err := os.Open(src)
+	defer dir.Close()
+	if err != nil {
+		return err
+	}
+	// 读取文件列表
+	fis, err := dir.Readdir(0)
+	if err != nil {
+		return err
+	}
+	// 遍历文件列表
+	for _, fi := range fis {
+		// 逃过文件夹, 我这里就不递归了
+		if fi.IsDir() {
+			continue
+		}
+		// 打印文件名称
+		fmt.Println(fi.Name())
+		// 打开文件
+		fr, err := os.Open(dir.Name() + "/" + fi.Name())
+		if err != nil {
+			return err
+		}
+		defer fr.Close()
+		// Create zip file information through file information.
+		fh, err := zip.FileInfoHeader(fi)
+		if err != nil {
+			return err
+		}
+
+		// Write file information and return a Write structure.
+		w, err := zw.CreateHeader(fh)
+		if err != nil {
+			return err
+		}
+
+		// If it is not a standard file, only the header information is written, and the file data is not written to w.
+		// Such as a directory, there is no data to write.
+		if !fh.Mode().IsRegular() {
+			return nil
+		}
+
+		// 写文件
+		_, err = io.Copy(w, fr)
+		if err != nil {
+			return err
+		}
+	}
+	fmt.Println("Tar Success")
+	return nil
+}
+
+// Zip Compressed file.
+// src is the abbreviation of source, which is a directory of files to be compressed.
+// dst is the abbreviation of destination, which is the compressed file directory.
+func ZipRecursive(src, dest string) (err error) {
+	// Create a file to be written.
+	fw, err := os.Create(dest)
+	defer fw.Close()
+	if err != nil {
+		return err
+	}
+
+	// Create zip.Write through fw.
+	zw := zip.NewWriter(fw)
+	defer func() {
+		// Check if it is successfully closed.
+		if err := zw.Close(); err != nil {
+			log.Fatalln(err)
+		}
+	}()
+
 	// Write the file to zw, because there may be many directories and files, so recursive processing.
 	return filepath.Walk(src, func(path string, fi os.FileInfo, errBack error) (err error) {
 		if errBack != nil {
