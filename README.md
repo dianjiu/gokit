@@ -142,8 +142,8 @@ Gotool欢迎任何人为Gotool添砖加瓦，贡献代码，不过维护者是�
 
 #### 欢迎关注点九先生的公众号
 
-![点九先生](./imgs/wechat.jpg)
+![点九先生](https://gitee.com/dianjiu/typora-imgs/raw/master/imgs/20210729173820.jpg)
 
 #### 点九开源项目QQ交流群
 
-![点九开源](./imgs/qqchat.jpg)
+![点九开源](https://gitee.com/dianjiu/typora-imgs/raw/master/imgs/20210729173825.jpg)
