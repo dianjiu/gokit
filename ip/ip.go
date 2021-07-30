@@ -20,7 +20,6 @@ func GetLocalIPv4() (ip string) {
 			for _, address := range addrs {
 				if ipnet, ok := address.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
 					if ipnet.IP.To4() != nil {
-						log.Println("本机IP：" + ipnet.IP.String())
 						return ipnet.IP.String()
 					}
 				}
