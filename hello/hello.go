@@ -1,9 +1,5 @@
 package hello
 
-import (
-	"log"
-)
-
-func SayHello() {
-	log.Println("Hello world !!!")
+func SayHello() string {
+	return "Hello, Gotool!"
 }
