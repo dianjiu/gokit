@@ -48,25 +48,25 @@ Gotool的目标是使用一个工具方法代替一段复杂代码，从而最�
 go get github.com/dianjiu/gotool
 ```
 
-以引入hello包下组件为例，调用SayHello()方法作为演示
+以引入ip包下组件为例，调用GetLocalIPv4()方方法获取本地IP作为演示
 
 ```go
 package main
 
 import (
-	"github.com/dianjiu/gotool/hello"
+	"github.com/dianjiu/gotool/ip"
 	"log"
 )
 
 func main() {
-	result := hello.SayHello()
-	log.Println(result)
+	ip := ip.GetLocalIPv4()
+	log.Println(ip)
 }
 ```
 
 运行结果
 
->   2021/07/30 11:20:42 Hello, Gotool!
+>   2021/07/30 14:48:45 本机IP：192.168.56.1
 
 ## 组件
 
