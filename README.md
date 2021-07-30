@@ -60,13 +60,13 @@ import (
 
 func main() {
 	ip := ip.GetLocalIPv4()
-	log.Println(ip)
+	log.Printf("本机IP: %v\n", ip)
 }
 ```
 
 运行结果
 
->   2021/07/30 14:48:45 本机IP：192.168.56.1
+>   2021/07/30 15:49:03 本机IP: 192.168.56.1
 
 ## 组件
 
