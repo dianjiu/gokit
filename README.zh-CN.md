@@ -99,7 +99,7 @@ func main() {
 
 ```
 import (
-	"github.com/dianjiu/GoKit/hello"
+	"github.com/dianjiu/gokit/hello"
 )
 ```
 
@@ -107,7 +107,7 @@ import (
 
 ```
 import (
-	"github.com/dianjiu/GoKit"
+	"github.com/dianjiu/gokit"
 )
 ```
 

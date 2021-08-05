@@ -95,7 +95,7 @@ Each module can be introduced and used separately according to requirements, as 
 
 ```
 import (
-	"github.com/dianjiu/GoKit/hello"
+	"github.com/dianjiu/gokit/hello"
 )
 ```
 
@@ -103,7 +103,7 @@ It can also be used by introducing all modules of `GoKit`, as follows:
 
 ```
 import (
-	"github.com/dianjiu/GoKit"
+	"github.com/dianjiu/gokit"
 )
 ```
 
