@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://GoKit.dianjiu.org.cn/"><img src="https://dianjiu.co/GoKit.jpg" width="45%"></a>
+	<a href="https://GoKit.dianjiu.org.cn/"><img src="https://dianjiu.co/gotool.jpg" width="45%"></a>
 </p>
 <p align="center">
 	<strong>一套 Go 工具包。</strong>
@@ -17,7 +17,7 @@
 -------------------------------------------------------------------------------
 
 ## 📚 简介
-GoKit是一个小而全的Go工具类库，通过静态方法封装，降低相关API的学习成本，提高工作效率，使Go拥有Java语言Hutool的体验，让Go语言也可以“爽歪歪 ”。
+GoKit是一个小而全的Go工具类库，通过静态方法封装，降低相关API的学习成本，提高工作效率，使Go拥有Java语言Hutool般地体验。
 
 GoKit中的工具方法来自每个用户的精雕细琢，它涵盖了Go开发底层代码中的方方面面，它既是大型项目开发中解决小问题的利器，也是小型项目中的效率担当；
 
