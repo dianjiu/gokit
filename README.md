@@ -74,16 +74,28 @@ func main() {
 
 | 模块                |     介绍                                                                          |
 | -------------------|---------------------------------------------------------------------------------- |
+| assertions | 断言处理工具类 |
+| bytes | byte字节转换工具类 |
+| caller | 获取函数名路径工具类 |
 | compress | 压缩、解压缩封装，提供tar和zip两种格式支持 |
+| file | 文件路径、文件是否存在、是否为文件夹等常用文件相关工具类 |
 | hello       |     Gotool的Hello World封装，提供SayHello()方法支持                |
+| http | http工具类，常用的Get、Post请求 |
 | ip | IP工具类 |
 | json        |     JSON操作实现                                                                       |
 | logger | 提供多种风险等级的日志输出封装 |
+| mail | 邮件发送工具类 |
+| map | map集合工具类 |
 | poi         |     针对POI中Excel和Word的封装                                                       |
+| random | 随机数工具类 |
 | security | 提供MD5、AES、RSA等方式的加解密方法 |
+| set | set集合工具类 |
+| slice | 切片工具类 |
 | socket      |     基于Go的NIO和AIO的Socket封装                                                   |
+| string | string字符串工具类 |
 | system      |     系统参数调用封装                                                     |
 | time | 提供常用的日期工具类及日期格式化封装 |
+| uuid | uuid工具类 |
 
 可以根据需求对每个模块单独引入使用，如下：
 
