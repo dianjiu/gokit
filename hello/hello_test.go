@@ -5,7 +5,7 @@ import (
 )
 
 func TestSayHello(t *testing.T) {
-	want := "Hello, Gotool!"
+	want := "Hello, GoKit!"
 	got := SayHello()
 	if got != want {
 		t.Errorf("SayHello() = %q, want %q", got, want)
