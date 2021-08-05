@@ -8,8 +8,6 @@
 	<a href="https://gkit.dianjiu.org.cn">https://gkit.dianjiu.org.cn/</a>
 </p>
 
-
-
 -------------------------------------------------------------------------------
 
 [**🌎 English Documentation**](README.zh-CN.md)
