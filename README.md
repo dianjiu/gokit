@@ -8,7 +8,7 @@
 	<a href="https://gokit.dianjiu.org.cn">https://gokit.dianjiu.org.cn/</a>
 </p>
 
-[**🌎 English Documentation**](README.zh-CN.md)
+[**🌎 Chinese Documentation**](README.zh-CN.md)
 
 -------------------------------------------------------------------------------
 
