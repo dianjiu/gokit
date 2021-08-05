@@ -151,6 +151,10 @@ GoKit welcomes anyone to contribute code to GoKit. The pr (pull request) that ne
 4. GoKit will use a new branch after version 1.x: `master` is the main branch, which means that the version of the central library has been released. This branch does not allow pr or modification. 
 
 ## ⭐ Star GoKit
+[![Giteye chart](https://chart.giteye.net/gitee/dianjiu/gokit/5BTC4MSR.png)](https://giteye.net/chart/5BTC4MSR)
+
+[![Stargazers over time](https://starchart.cc/dianjiu/gokit.svg)](https://starchart.cc/dianjiu/gokit)
+
 ## 📌 Comminicate 
 
 ### 🧡  EMail dianjiu@dianjiu.cc

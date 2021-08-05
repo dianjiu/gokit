@@ -155,6 +155,10 @@ GoKit欢迎任何人为GoKit贡献代码，需要提交的pr（pull request）�
 4. GoKit在1.x版本后将使用新的分支：`master`是主分支，表示已经发布中央库的版本，这个分支不允许pr，也不允许修改。
 
 ## ⭐ Star GoKit
+[![Giteye chart](https://chart.giteye.net/gitee/dianjiu/gokit/5BTC4MSR.png)](https://giteye.net/chart/5BTC4MSR)
+
+[![Stargazers over time](https://starchart.cc/dianjiu/gokit.svg)](https://starchart.cc/dianjiu/gokit)
+
 ## 📌 交流
 
 ### 🧡 公众号
