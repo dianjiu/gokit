@@ -715,8 +715,7 @@ func ExampleGmail() {
 	e.Subject = "Awesome Subject"
 	e.Text = []byte("Text Body is, of course, supported!\n")
 	e.HTML = []byte("<h1>Fancy Html is supported, too!</h1>\n")
-	//config := `{"username":"gitlab@dianjiu.cc","password":"Xj576NSKATxxCJiY","host":"smtp.exmail.qq.com","port":465,"from":"Gitlab"}`
-	e.Send("smtp.exmail.qq.com:465", smtp.PlainAuth("", e.From, "Xj576NSKATxxCJiY", "smtp.exmail.qq.com"))
+	e.Send("smtp.exmail.qq.com:465", smtp.PlainAuth("", e.From, "123456", "smtp.exmail.qq.com"))
 }
 
 func ExampleAttach() {
